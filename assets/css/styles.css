@@ -18,7 +18,7 @@ color: #fff;
 background-color:#00008b;
 background-color: #44446f;
 background-color: #22222f;
-background-color: #000;
+background-color: #000 !important;
   background-position: top; 
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,11 +26,17 @@ background-color: #000;
 }
 /* default style for links */
 
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+}
+
+
 a{
     color:#fff;
     color:greenyellow;
     font-weight:lighter;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover{
@@ -40,6 +46,10 @@ a:hover{
     text-decoration: none;
 }
 
+/*
+.active{
+    color:red;
+}*/
 
 /* Header styles */
 header{
@@ -93,6 +103,12 @@ color:#eae5f3;
  text-transform: uppercase;
  text-decoration: none;
 }
+
+#support-down-menu{
+    display:none;
+    font-size: 1rem;
+}
+
 
 
 .social-networks{
@@ -296,11 +312,12 @@ text-decoration:overline;
 
   .square-menu{
       margin:0 0px 0 0px;
+      /*margin-bottom:25px;*/
       background-color:inherit;
       /*background-color: #3f48cc;
       border: 1px solid #8fc2c4;*/
       text-align:center;
-      height:20vh;
+      height:21vh;
       /*z-index:-2;*/
       
   }
@@ -326,6 +343,18 @@ text-decoration:overline;
       height:auto;
       
   }
+    .square-menu-col a{
+        color:greenyellow;
+        text-decoration: none;
+    }
+
+        .square-menu-col a:hover{
+        color:#fff;
+        text-decoration: none;
+    }
+
+
+
   .square-menu-col-gradient{
       background-color:#3f48cc;
   background: linear-gradient(to right, #002395, #000000 66.66%);
@@ -343,68 +372,6 @@ text-decoration:overline;
   }
 
 /*End Styles Square Menu Content or Sell*/
-
-
-/*     Other resources menu  */
-/*
-.other-resources{
-    position: relative;
-    margin:0;
-    top:0;
-    display: inline-flex;
-    width: auto;
-    height: auto;
-    font-size: 1.1rem;
-    font-weight: lighter;
-    line-height: 1.8rem;
-}
-
-.other-resources ul{
-    position:relative;
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-
-
-.other-resources ul li{
-    position:relative;
-    margin:0;
-    padding:6px;
-    display: inline;
-}
-
-.other-resources ul li a{
-    position:relative;
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-        color:#eae5f3;
-        color:#eac6b8;
-    text-decoration: none;
-    text-transform:uppercase;
-}
-
-.other-resources ul li a:hover{
- color:#b9b9e0;
- text-decoration: none;
-}*/
-
-.navbar a[class="navbar-brand"]{
-    color:whitesmoke;
-}
-
-.navbar .nav-item{
-    color:inherit;
-}
-
-.navbar .nav-item .mr-auto .active{
-    color:orange;
-}
-
-.navbar.navbar-9 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
-}
 
 
 /*  Header styles ends */
@@ -429,6 +396,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FB
 .about-title {
     position:relative;
     padding-left:35px;
+    padding-top:50px;
 font-size: 2.1rem;
     font-weight: lighter;
     line-height: 1.8rem;
@@ -455,6 +423,7 @@ font-size: 2.1rem;
 
 ol{
     padding-left:75px;
+    padding-right:35px;
     font-size: 1.1rem;
     font-weight: lighter;
     line-height: 1.8rem;
@@ -462,6 +431,7 @@ ol{
     color: #1143e4;
     color:#c1bef7;
     color:#fff;
+    text-align: justify;
 }
 
 .about-short-text p{

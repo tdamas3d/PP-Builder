@@ -10,12 +10,13 @@
     <title>Products Page Builder</title>
 
      <!-- Load Our Local CSS and Bootstrap Library for more CSS functions-->
+     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
      <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
     
    <!-- Load FontAwasome Library for Icons used in the site-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">  
     <script src="https://kit.fontawesome.com/71fb7fde01.js" crossorigin="anonymous"></script>
 
     <!-- Load Jasmine Framework, Our Testing Framework for Javascript in this project -->
@@ -23,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js" integrity="sha512-bqig44hBpNuvBzxsqbHiqwRximGm4UfJAvOeNQHjB7++0D2u/3bcw4ZwmVsqrooii2UJ91oDI/6aANdp3BwcQQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.min.js" integrity="sha512-uVTH4+dZ7oHLKN3wMAPltsPuVOgfORZSUelvr7HWJmSsazBJKgUNTRSm+bUJ3IfKkG4Y1nLFr0qRX8oFS2fbZg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css" integrity="sha512-XKXP02aeSNI5HsDB3+4MM0tSDXJTBFZpt99xL7PvMz3+A3aRy0F0Ne/CATK+Z72ckE/4Ev9OiosWQr5LtU284Q==" crossorigin="anonymous" />
+
     
     <!-- Load Our Site Javascript Code-->
     <!-- Link to JQuerry CDN-->
@@ -79,7 +81,12 @@
                 <nav class="d-none d-sm-inline-block d-md-inline-block d-lg-inline-block d-xl-inline-block">
                      <ul>
                       <li><a href="index.html"><i class="fas fa-home fa-md"></i> Home</a></li>
-                      <li><a href="/" target="_blank"><i class="fas fa-wrench"></i> User Support</a></li>
+                      <li><a href="/" target="_blank"><i class="fas fa-wrench"></i> User Support</a>
+                          <ul id="support-down-menu">
+                              <li><a href="/" target="_blank">General Querries</a></li>
+                              <li><a href="/" target="_blank">Sales & Refund</a></li>
+                          </ul>
+                      </li>
                       <li><a href="/"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                      </ul>
                 </nav> 
@@ -169,7 +176,7 @@
      <div class="col-md-12">
          
      <div class="row">
-      <div class="col-md-12 space-free">
+      <div class="col-md-12">
        <h2 class="about-title"><i class="fas fa-info-circle"></i> About PP Builder</h2>
       </div>
      </div>
