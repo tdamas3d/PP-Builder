@@ -81,7 +81,7 @@
                 <nav class="d-none d-sm-inline-block d-md-inline-block d-lg-inline-block d-xl-inline-block">
                      <ul>
                       <li><a href="index.html"><i class="fas fa-home fa-md"></i> Home</a></li>
-                      <li><a href="/" target="_blank"><i class="fas fa-wrench"></i> User Support</a>
+                      <li><a id="user-support" href="javascript:void();" target="_blank"><i class="fas fa-wrench"></i> User Support</a>
                           <ul id="support-down-menu">
                               <li><a href="/" target="_blank">General Querries</a></li>
                               <li><a href="/" target="_blank">Sales & Refund</a></li>
@@ -160,7 +160,10 @@
              <div class="row square-menu">
              
               <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 square-menu-col"></div>
-              <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col"><i class="far fa-compass"></i> <a href="/">Launch PP Builder</a></div>
+              <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col">
+              <!--<i class="far fa-compass"></i> <a href="/">Launch PP Builder</a>-->
+              <i class="far fa-compass"></i> <button data-toggle="modal" data-target="#messageModal">Launch PP Builder</button>
+              </div>
               <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col"><i class="far fa-folder-open"></i> <a href="/">Resources</a></div>
               <div class="col-12 col-sm-4 col-md-1 col-lg-1 col-xl-1 square-menu-col square-menu-col-gradient"><!--<a href="/"><i class="fas fa-sign-in-alt"></i> </a>--></div>
              
@@ -176,9 +179,17 @@
      <div class="col-md-12">
          
      <div class="row">
-      <div class="col-md-12">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
        <h2 class="about-title"><i class="fas fa-info-circle"></i> About PP Builder</h2>
       </div>
+
+   <div id="ppbuilder-form" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+               
+        <button data-toggle="modal" data-target="#messageModal" class="btn-success"><i class="far fa-compass"></i> Launch PP Builder API</button>
+
+      <!-- Dynamic Form Div -->
+   </div>
+
      </div>
 
  <div class="row">
@@ -193,50 +204,8 @@ The PP Builder works as follows:</p>
     <li>Enter the keywords, in this case, the name or type of products</li>
     <li>Search by pressing the search button</li>
 </ol>
-
-
       </div>
      </div>
-
-<!--<div class="row short-summary">
-      <div class="col-md-6">
-
-<h2>Work History</h2>
-<p class="lead">
-<strong>Jan 2014 - Feb 2020: </strong>Örebro University<br>
-Doctoral Research in ifnormation Systems
-</p>
-<h2>Education</h2>
-<p class="lead">
-<strong>Örebro University (2014-2020)</strong><br>
-Degree of Doctor of Philosophy within the subject of Informatics<br>
-<strong>University of Rwanda (2010-2012)</strong><br>
-Master of Science Honours Degree in Information and Communication Technology - Option Computer Science
-<strong>University of Rwanda (2004-2009)</strong><br>
-Bachelor of Science Honours Degree in Computer Science <br>
-<a href="assets/files/CV_of_Jean.pdf" target="_blank">More ...</a>
-</p>
-<h2>Hobbies</h2>
-<p class="lead">
-Play Football,Hand ball, Basket ball, Tennis <br>
-Play piano, Watch TV, Hicking, ...                
-</p>  
-<h2><a href="assets/files/CV_of_Jean.pdf" target="_blank">more ...</a> </h2>
-
-     </div>
-
-   
-   <div class="col-md-6 graphics d-none d-sm-block d-md-block d-lg-block d-xl-block"> 
-
-    <a href="https://www.oru.se/" target="_blank"><img src="assets/images/oru-image.jpg" alt="Orebro university in pictures"></a>
-    <br><br>
-    <div class="link-buttons"><a href="index.html"><i class="fas fa-home"></i> Home </a></div>
-    <div class="link-buttons" id="competences"><a href="competences.html#competence"><i class="fas fa-assistive-listening-systems"></i> Competences</a></div>
-    <div class="link-buttons" id="projects"><a href="projects.html#project"><i class="fas fa-tasks fa-md"></i> projects</a></div>
-    <div class="link-buttons" id="cv"><a href="assets/files/CV_of_Jean.pdf" target="_blank"><i class="fas fa-download"></i> Download CV</a></div>
-    
-     </div>
-</div>-->
 </div>
 </div>
 </div><!--Section for content ends here-->
@@ -253,17 +222,15 @@ Play piano, Watch TV, Hicking, ...
               <div class="col-12">
                   <div class="row">
                <div class="col-3 contactus-left-zone"> <!-- START OF LEFT ZONE -->
-                     <div class="row d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                      <div class="col-12 content-left">
+                  <div class="row d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                    <div class="col-12 content-left">
                    
-                        <h2 class="btn-success">PP Builder</h2>
-                        <!--<h2> Jean's Pro</h2>-->
-                        
+                        <h2 class="btn-success"><!--PP Builder--> <button data-toggle="modal" data-target="#messageModal" class="btn-success"><i class="far fa-compass"></i> Launch Products Page Builder</button></h2>
+                                          
                         <p class="lead">
-                            Automatically creates products page for the latest products on amazon or any other eCommerce platform in any niches </p>
-                        
-                      </div>
-                    </div>                   
+                            Automatically creates products page for the latest products on amazon or any other eCommerce platform in any niches </p>                    
+                    </div>
+                   </div>                   
                 </div> 
 
                      <div class="col-9 right-zone">                 

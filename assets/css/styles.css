@@ -370,8 +370,32 @@ text-decoration:overline;
       border-color:none;
       /*z-index:-1;*/
   }
-
+button{
+    background-color: transparent;
+    border:none;
+    font-size:inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color:greenyellow;
+}
+button:hover{
+    background-color: transparent;
+    border:none;
+    font-size:inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color:#fff;
+}
 /*End Styles Square Menu Content or Sell*/
+
+/*Products Page Builder Form - search products and generate code form*/
+#ppbuilder-form{
+  margin-top:60px;
+}
+
+
+
+
 
 
 /*  Header styles ends */
@@ -514,6 +538,7 @@ ol{
 }
 
 /*  css style for image in the short cv */
+/*
 .graphics{
   position:relative;
   margin-bottom: 5px;
@@ -548,9 +573,10 @@ ol{
     border-radius: 4px;
     background-color:#007bff;
     color:#fff;
-}
+}*/
 
 /* link buttons initial state */
+/*
 .link-buttons, #home{
  background-color:#787b7d;
  color:white;
@@ -566,9 +592,9 @@ ol{
 .link-buttons, #cv{
  background-color:#4d4e48;
  color:white;
-}
+}*/
 /*  Link buttons on hover */
-
+/*
 .link-buttons #competences:hover{
  background-color: #8c6c5f;
  color:#fff;
@@ -582,13 +608,13 @@ ol{
  background-color:#afb69e;
  color:#fff;
 }
-
+*/
 
 /* styles for other pages */
 
 
 /* competences page styles */
-
+/*
 .competences{
  position:relative;
  background-color: inherit;
@@ -636,12 +662,11 @@ ol{
     line-height: 1.8rem;
     color:#b6d489;
  text-transform: capitalize;
-
 }
 
-
+*/
 /* images styles in the competences page */
-
+/*
 .competences img{
     position:relative;
     margin-bottom:25px;
@@ -656,7 +681,7 @@ ol{
           opacity: 0.7;
     filter: alpha(opacity=70);
 }
-
+*/
 
 .projects{
     position:relative;
