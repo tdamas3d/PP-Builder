@@ -80,57 +80,18 @@
             
                 <nav class="d-none d-sm-inline-block d-md-inline-block d-lg-inline-block d-xl-inline-block">
                      <ul>
-                      <li><a href="index.html"><i class="fas fa-home fa-md"></i> Home</a></li>
+                      <li><a id="home-top-menu-item" href="index.html"><i class="fas fa-home fa-md"></i> Home</a></li>
                       <li><a id="user-support" href="javascript:void();" target="_blank"><i class="fas fa-wrench"></i> User Support</a>
                           <ul id="support-down-menu">
                               <li><a href="/" target="_blank">General Querries</a></li>
                               <li><a href="/" target="_blank">Sales & Refund</a></li>
                           </ul>
                       </li>
-                      <li><a href="/"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                      <li><a id="login-top-menu-item" href="/"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                      </ul>
                 </nav> 
                          
-          
-             <!--Navbar-->
-<nav class="navbar navbar-light navbar-9 white col-12 d-block d-sm-none d-md-none d-lg-none d-xl-none">
-
-  <!-- Navbar brand -->
-  <a class="navbar-brand" href="index.html#about">PP Builder</a>
-
-  <!-- Collapse button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-    aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-  <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html"><i class="fas fa-home fa-sm"></i> Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html#about"><i class="fas fa-info-circle fa-sm"></i> About The Product</a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html#contactus" target="_self"><i class="fa fa-question-circle" aria-hidden="true"></i> Support</a>
-      </li>
-      <li class="nav-item">
-        <a href="/" target="_blank"><i class="fas fa-download"></i> Login</a>
-      </li>
-      
-    </ul>
-    <!-- Links -->
-
-  </div>
-  <!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
-
-
-           </div><!-- End main nav and social links-->
+            </div><!-- End main nav and social links-->
            
           
              <div class="social-networks">
@@ -164,7 +125,15 @@
               <!--<i class="far fa-compass"></i> <a href="/">Launch PP Builder</a>-->
               <i class="far fa-compass"></i> <button data-toggle="modal" data-target="#searchModal">Launch PP Builder</button>
               </div>
-              <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col"><i class="far fa-folder-open"></i> <a href="/">Resources</a></div>
+              <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col">
+              <span id="resourcesItem"><i class="far fa-folder-open"></i> <a href="/">Resources</a></span>
+                  <ul id="drop-down-menu">
+                  <li><i class="fas fa-question-circle"></i> <a href="/">PP Builder FAQs</a></li>
+                  <li><i class="fas fa-share-alt-square"></i> <a href="/">Related Products</a></li>
+                  <li><i class="fas fa-toolbox"></i> <a href="/">user's manual</a></li>
+                  <li><button data-toggle="modal" data-target="#searchModal" class="btn-success"><i class="far fa-compass"></i> Launch PP Builder</button></li>
+                  </ul>
+              </div>
               <div class="col-12 col-sm-4 col-md-1 col-lg-1 col-xl-1 square-menu-col square-menu-col-gradient"><!--<a href="/"><i class="fas fa-sign-in-alt"></i> </a>--></div>
              
              </div>
@@ -183,12 +152,11 @@
        <h2 class="about-title"><i class="fas fa-info-circle"></i> About PP Builder</h2>
       </div>
 
-   <div id="ppbuilder-form" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+  <!-- <div id="ppbuilder-form" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                
         <button data-toggle="modal" data-target="#searchModal" class="btn-success"><i class="far fa-compass"></i> Launch PP Builder API</button>
 
-      <!-- Dynamic Form Div -->
-   </div>
+   </div>-->
 
      </div>
 
