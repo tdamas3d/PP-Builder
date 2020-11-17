@@ -389,11 +389,13 @@ button:hover{
 /*End Styles Square Menu Content or Sell*/
 
 /*Products Page Builder Form - search products and generate code form*/
-#ppbuilder-form{
+/*#ppbuilder-form{
   margin-top:60px;
+}*/
+
+#generatedHTML{
+    display:none;
 }
-
-
 
 
 
@@ -957,13 +959,13 @@ transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 .modal-title {
     margin-bottom: 0;
     line-height: 1.5;
-    color: #a89dc3;
+    color:green;
 }
 
 label {
     display: inline-block;
     margin-bottom: .5rem;
-    color: #cbeacb;
+    color: green;
 }
    .text-muted {
     color: #a7e26e!important;

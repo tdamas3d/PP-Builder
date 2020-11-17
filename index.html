@@ -162,7 +162,7 @@
               <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 square-menu-col"></div>
               <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col">
               <!--<i class="far fa-compass"></i> <a href="/">Launch PP Builder</a>-->
-              <i class="far fa-compass"></i> <button data-toggle="modal" data-target="#messageModal">Launch PP Builder</button>
+              <i class="far fa-compass"></i> <button data-toggle="modal" data-target="#searchModal">Launch PP Builder</button>
               </div>
               <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 square-menu-col"><i class="far fa-folder-open"></i> <a href="/">Resources</a></div>
               <div class="col-12 col-sm-4 col-md-1 col-lg-1 col-xl-1 square-menu-col square-menu-col-gradient"><!--<a href="/"><i class="fas fa-sign-in-alt"></i> </a>--></div>
@@ -185,7 +185,7 @@
 
    <div id="ppbuilder-form" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                
-        <button data-toggle="modal" data-target="#messageModal" class="btn-success"><i class="far fa-compass"></i> Launch PP Builder API</button>
+        <button data-toggle="modal" data-target="#searchModal" class="btn-success"><i class="far fa-compass"></i> Launch PP Builder API</button>
 
       <!-- Dynamic Form Div -->
    </div>
@@ -225,7 +225,7 @@ The PP Builder works as follows:</p>
                   <div class="row d-none d-sm-block d-md-block d-lg-block d-xl-block">
                     <div class="col-12 content-left">
                    
-                        <h2 class="btn-success"><!--PP Builder--> <button data-toggle="modal" data-target="#messageModal" class="btn-success"><i class="far fa-compass"></i> Launch Products Page Builder</button></h2>
+                        <h2 class="btn-success"><!--PP Builder--> <button data-toggle="modal" data-target="#searchModal" class="btn-success"><i class="far fa-compass"></i> Launch Products Page Builder</button></h2>
                                           
                         <p class="lead">
                             Automatically creates products page for the latest products on amazon or any other eCommerce platform in any niches </p>                    
@@ -294,6 +294,71 @@ The PP Builder works as follows:</p>
     </div>
     </section>     <!-- End SECTION FOR Contact us form HTML -->
 
+
+
+
+
+    <!-- Search products form-->
+        <section>  
+
+         <div class="modal" tabindex="-1" role="dialog" id="searchModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">WELCOME TO PRODUCTS PAGE BUILDER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                
+                <div class="modal-body">
+                    <form id="productsSearchForm" action="website-to-search-products-from" method="get">
+                        <div class="form-group">
+
+                            <!--<label for="siteUrl">(Required) Enter URL Of The Products' Site, e.g., amazon.com</label>
+                            <input type="text" class="form-control" name="siteUrl" id="siteUrl" aria-describedby="siteUrl" placeholder="enter url, e.g., amazon.com" required>
+                            -->
+
+
+       <!--<fieldset>-->
+          <!--<legend>Selecting elements</legend>
+          <label for="siteUrl">(Required) Enter URL Of The Products' Site, e.g., amazon.com</label>-->
+          <!--<p>-->
+             <label for="siteUrl">(Required) Enter URL Of The Products' Site, e.g., amazon.com</label>
+             <select id ="siteUrl">
+               <option value = "https://www.amazon.com/">Amazon</option>
+               <option value = "https://www.ebay.com/sch/">eBay</option>
+               <option value = "https://www.alibaba.com/trade/search?fsb">Alibaba</option>
+             </select>
+          <!--</p>-->
+        <!--</fieldset>-->
+
+                        </div>
+                        <div class="form-group">
+                           <label for="productName">Enter Name/Type of Products</label>
+                            <input type="text" class="form-control" name="productName" id="productName" aria-describedby="productName" placeholder="type name or type of product, e.g., tomatoes">
+                            
+                        </div>
+
+                         <!--<div id="generatedHTML" class="form-group"> 
+                             <label for="htmlCode">Generated HTML CODE for The Products Page </label>
+                            <textarea class="form-control" name="htmlCode" id="htmlCode" rows="4" cols="50" aria-describedby="htmlCode">
+                             HTML Generated Code Is Here.
+                            </textarea>
+
+                        </div>-->
+
+                        <button type="submit" class="btn btn-success" id="searchProducts" name="searchProducts">Search Products</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>     <!-- End SECTION FOR search products HTML -->
+
+
+
+
             </div>
 
         </div>
@@ -329,6 +394,7 @@ You can read more about how we protect privacy of your data <a href="https://ec.
           
            <!-- social links-->
              <h6>Join PP Builder Community</h6>
+           
                  <nav>
                      <ul>
                       <li><a href="https://www.linkedin.com/in/jtwizeyimana" target="_blank"><i class="fab fa-linkedin-in fa-md"></i> </a></li>
