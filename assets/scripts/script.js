@@ -3,22 +3,7 @@
 /* Enclosing Our javascript into javascript's DOM "ready" function for the script to run after the entire html oage is loaded  */
 $(document).ready(function(){
 
-$("#user-support").hover(function(){ 
-    $("#support-down-menu").removeClass('top-nav-links');
-    $("#support-down-menu").addClass('resetMenu');
-    $("#support-down-menu").addClass('dropDownMenu');
-    $("#support-down-menu").show();
-    $("#home-top-menu-item").hide();
-    $("#login-top-menu-item").hide();
-  });
-  
-$("#support-down-menu").mouseout(function(){
-    $("#support-down-menu").hide();
-        $("#home-top-menu-item").show();
-    $("#login-top-menu-item").show();
-  });
-  
-  /*Create a drop down menu for the Resources Menu Option - it has subsections that we would like to hide by default and show them on mouse over*/
+   /*Create a drop down menu for the Resources Menu Option - it has subsections that we would like to hide by default and show them on mouse over*/
 $("#resourcesItem").hover(function(){
     $("#drop-down-menu").show();
   });
@@ -37,6 +22,18 @@ $("#drop-down-menu").hover(function(){
   $("#drop-down-menu").mouseleave(function(){
         $("#resourcesItem").show();
         $("#drop-down-menu").hide();
+  });
+
+  /*On user's request, i.e., when click the link "user's guide"  the code below dynamically displays the content of user's guide web page into the zone of content on the home page */
+  
+  
+   $("#user-guide-link").click(function(){
+
+         $("#about12").load('userguide.html');
+       /*$("#about12").show();*/
+        var htmlContent=$("#about12").html();
+      /*  alert(htmlContent);*/
+        
   });
 
 
