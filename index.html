@@ -24,20 +24,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js" integrity="sha512-bqig44hBpNuvBzxsqbHiqwRximGm4UfJAvOeNQHjB7++0D2u/3bcw4ZwmVsqrooii2UJ91oDI/6aANdp3BwcQQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.min.js" integrity="sha512-uVTH4+dZ7oHLKN3wMAPltsPuVOgfORZSUelvr7HWJmSsazBJKgUNTRSm+bUJ3IfKkG4Y1nLFr0qRX8oFS2fbZg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css" integrity="sha512-XKXP02aeSNI5HsDB3+4MM0tSDXJTBFZpt99xL7PvMz3+A3aRy0F0Ne/CATK+Z72ckE/4Ev9OiosWQr5LtU284Q==" crossorigin="anonymous" />
-     
-     <!--Load my HTML Pages For Site Content 
-     <link rel="import" href="userguide.html">-->
     
     <!-- Load Our Site Javascript Code-->
-    <!-- Link to JQuerry CDN
+         <!-- JQuery Via CDN-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/scripts/jquery-3.5.1.js"></script>-->
-    
-    <!-- Own written javascripts for the project 
-    <script type="text/javascript" src="assets/scripts/script.js"> </script>-->
+    <!-- JQuery via file hosted here by us in this project-->
+    <script type="text/javascript" src="assets/scripts/jquery-3.5.1.js"></script>
+         
+    <!-- Developer's javascripts code for the project -->
+    <script type="text/javascript" src="assets/scripts/script.js"> </script>
      
      <!-- Load specs (or tests to be run to test our script.js) -->
-    <!--<script type="text/javascript" src="assets/specs/scriptSpec.js"> </script>-->
+    <script type="text/javascript" src="assets/specs/scriptSpec.js"> </script>
 
 
     <!-- LOAD USER GUIDE PAGE -->
@@ -155,7 +153,12 @@
 <div id="about" class="row about">
      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
      <!-- The dynamic display zone for site content-->  
-     <div id="contentDisplayZone" class="row">HEYEYEYEYEYEYE</div>
+     <div class="row"> 
+       <div id="contentDisplayZone">
+       
+       </div>
+     
+     </div>
      <!-- And also The end of  the dynamic display zone for site content-->
 
 
@@ -177,7 +180,7 @@ The PP Builder works as follows:</p>
 <ol>
     <li>Enter the url of the site to search products from</li>
     <li>Enter the keywords, in this case, the name or type of products</li>
-    <li>Search by pressing the search button</li>
+    <li>Search products and Generate PP (products pages or catalog)</li>
 </ol>
       </div>
      </div>
@@ -216,11 +219,9 @@ The PP Builder works as follows:</p>
                         <h2 id="contactus">Contact Us</h2>
                         
                         <p class="lead">
-                        <i class="fa fa-phone" aria-hidden="true"></i> Contact us for Help and Questions. We will respond within 24 hours. <br> <strong>Via Phone Calling: +46769749258</strong><br> OR
-                        </p><button data-toggle="modal" data-target="#messageModal" class="btn-success">Text Message</button><br><br>
-                        <p class="lead">Thank you for contacting us!<br>
-                        
-                        Go back to the top of the page for more info. and browsing.<br><br> <a href="index.html"> Go back  <i class="fa fa-long-arrow-left" aria-hidden="true"></i> <i class="fa fa-shopping-basket" aria-hidden="true"></i></a></p>
+                        <i class="fa fa-phone" aria-hidden="true"></i> Contact us for Help and Questions. <br> 
+                        </p><button data-toggle="modal" data-target="#messageModal" class="btn-success">Contact Us Now</button><br><br>
+                    
                       </div>                      
 
                       </div> 
@@ -293,15 +294,6 @@ The PP Builder works as follows:</p>
                     <form id="productsSearchForm" action="website-to-search-products-from" method="get">
                         <div class="form-group">
 
-                            <!--<label for="siteUrl">(Required) Enter URL Of The Products' Site, e.g., amazon.com</label>
-                            <input type="text" class="form-control" name="siteUrl" id="siteUrl" aria-describedby="siteUrl" placeholder="enter url, e.g., amazon.com" required>
-                            -->
-
-
-       <!--<fieldset>-->
-          <!--<legend>Selecting elements</legend>
-          <label for="siteUrl">(Required) Enter URL Of The Products' Site, e.g., amazon.com</label>-->
-          <!--<p>-->
              <label for="siteUrl">(Required) Enter URL Of The Products' Site, e.g., amazon.com</label>
              <select id ="siteUrl">
                <option value = "https://www.amazon.com/">Amazon</option>
@@ -318,15 +310,8 @@ The PP Builder works as follows:</p>
                             
                         </div>
 
-                         <!--<div id="generatedHTML" class="form-group"> 
-                             <label for="htmlCode">Generated HTML CODE for The Products Page </label>
-                            <textarea class="form-control" name="htmlCode" id="htmlCode" rows="4" cols="50" aria-describedby="htmlCode">
-                             HTML Generated Code Is Here.
-                            </textarea>
 
-                        </div>-->
-
-                        <button type="submit" class="btn btn-success" id="searchProducts" name="searchProducts">Search Products</button>
+                        <button type="submit" class="btn btn-success" id="searchProducts" name="searchProducts">Search Products, Generate Products Pages and Catalogs</button>
                     </form>
                 </div>
             </div>
@@ -397,22 +382,7 @@ You can read more about how we protect privacy of your data <a href="https://ec.
 
 
 <!--JQUERY (JAVASCRIPT) SCRIPTS FOR THE CONTACT FORM TO WORK-->
-     
-
-     <!-- JQuery Via CDN-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <!-- JQuery via file hosted here by us in this project-->
-    <script type="text/javascript" src="assets/scripts/jquery-3.5.1.js"></script>
-     <!--More libraries for the bootstrap and form-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
     
-
-
-   <!-- Own written javascripts for the project -->
-    <script type="text/javascript" src="assets/scripts/script.js"> </script>
-     <!-- Load specs (or tests to be run to test our script.js) -->
-    <script type="text/javascript" src="assets/specs/scriptSpec.js"> </script>
     </body>
 </html>

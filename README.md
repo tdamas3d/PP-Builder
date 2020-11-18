@@ -1,45 +1,46 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Welcome to PP Builder
+<p>PP Builder is a short for Products' Page Builder.</p>
+<p>
+PP Builder is a web-based products developed in HTML and Javascript.<br>PP Builder can be accessed using any device capable to handle web services.</p>
+<p>
+ In a summary, PP Builder, is a web-based application that allows its users (buyers, sellers, and/or marketers) to aggregate into a single web page, the selected category of products. Those products should be available online in real-time for buyers.</p>
+<p>
+PP Builder provides users with the possibilities to search and build products pages, for only in-stock products, from major e-commerce platforms such as Amazon, eBay, and Alibaba. The PP Builder has a simple interface for users with two main input fields. The first in put field allows users to type in the url of the e-commerce platform, for example, Amazon, that the products are searched from. The second input field is for the search keywords, that is, the name or category of products, for example, computers.<br>
+The PP Builder works as follows:</p>
+<ol>
+    <li>Enter the url of the site to search products from</li>
+    <li>Enter the keywords, in this case, the name or type of products</li>
+    <li>Search by pressing the search button</li>
+</ol>
+<p>
+   Using AJAX and APIs, the system pulls products data from external e-commerce platforms, e.g., eBay, to generate products pages depending on products users are requesting.
+   <br> The generated products pages can be used by users to sell or promote contained products.
+</p>
 
-Welcome Jean,
+## PP Builder is ease to use!
+<b>Relax and :</b>
+<ol>
+   <li>Launch PP Builder</li>
+   <li>Select the url or e-commerce platform where products are pulled from</li>
+   <li>Enter the keywords, product name or category</li>
+   <li>Then hit the button "Generate PP"</li>
+</ol>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+<b>That's all!</b>
 
-## Gitpod Reminders
+<p><b>Then enjoy the pages!</b> Use them to sell or promote products on social networks, use them in blogs etc.</p>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Targeted Audience
+<ul>
+   <li>Amazon, eBay, or Alibaba Associates</li>
+   <li>Affiliate marketers</li>
+   <li>Etc.</li>
+</ul>
 
-`python3 -m http.server`
+## ! important:
+<p> The product is Under development</p>
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!

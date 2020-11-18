@@ -24,21 +24,25 @@ $("#drop-down-menu").hover(function(){
 
   /*On user's request, i.e., when click the link "user's guide"  the code below dynamically get and displays the content of user's guide web page into the zone of content on the home page */
   /* It simply access and use in the home page the content from external resources, in this case, from my own pages */
-  $("#user-guide-link").click(function(){
-       
-  });
-
+  $("#user-guide-link").hover(function(){
+   
+/*
+     $("#titled").hide();*/
+    
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
     if(this.readState == 4 && this.status == 200) {
-   document.getElementById("contentDisplayZone").innerHTML = this.responseText;
+     $("#contentDisplayZone").innerHTML = this.responseText;
    }
 };
 
-xhr.open("GET", "https://swapi.co/api/");
+xhr.open("GET", "userguide.html");
 xhr.send();
+xhr.close();
 
 
+
+});
 
   
   $("#searchProducts").click($.fn.searchSite=function(){
