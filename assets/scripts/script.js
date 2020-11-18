@@ -2,7 +2,6 @@
 /*Start Javascript Developer code */
 /* Enclosing Our javascript into javascript's DOM "ready" function for the script to run after the entire html oage is loaded  */
 $(document).ready(function(){
-
    /*Create a drop down menu for the Resources Menu Option - it has subsections that we would like to hide by default and show them on mouse over*/
 $("#resourcesItem").hover(function(){
     $("#drop-down-menu").show();
@@ -25,23 +24,19 @@ $("#drop-down-menu").hover(function(){
 
   /*On user's request, i.e., when click the link "user's guide"  the code below dynamically get and displays the content of user's guide web page into the zone of content on the home page */
   /* It simply access and use in the home page the content from external resources, in this case, from my own pages */
-   $("#user-guide-link").click(function(){
-       var xhr = new XMLHttpRequest();
-       xhr.onreadystatechange = function() {
-       if(this.readState == 4 && this.status == 200) {
-       /*document.getElementById("data").innerHTML = this.responseText;*/
-       $("#user-guide-display-zone").html() = this.responseText;
-      }
-   };
-
-   xhr.open("GET", "userguide.html");
-
-
-        
+  $("#user-guide-link").click(function(){
+       
   });
 
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+    if(this.readState == 4 && this.status == 200) {
+   document.getElementById("contentDisplayZone").innerHTML = this.responseText;
+   }
+};
 
-
+xhr.open("GET", "https://swapi.co/api/");
+xhr.send();
 
 
 

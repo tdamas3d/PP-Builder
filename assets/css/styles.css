@@ -438,11 +438,12 @@ font-size: 2.1rem;
     color:greenyellow;
  text-transform: uppercase;
 }
-/*
-#about12{
-    display: block;
+
+
+#contentDisplayZone{
+ display:block;
 }
-*/
+
 
 .about-short-text{
     position:relative;
