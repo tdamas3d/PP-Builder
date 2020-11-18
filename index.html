@@ -31,23 +31,24 @@
     <!-- Load Our Site Javascript Code-->
     <!-- Link to JQuerry CDN-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-3.5.1.js"></script>
+    
     <!-- Own written javascripts for the project -->
     <script type="text/javascript" src="assets/scripts/script.js"> </script>
      
      <!-- Load specs (or tests to be run to test our script.js) -->
-    <script type="text/javascript" src="assets/specs/scriptSpec.js"> </script>
+    <!--<script type="text/javascript" src="assets/specs/scriptSpec.js"> </script>-->
 
 
+    <!-- LOAD USER GUIDE PAGE -->
     <script>
      $(document).ready(function(){
    
-       $('#about12').load("userguide.html");
+       $('#user-guide-display-zone').load("userguide.html");
 
       });
     </script>
-
-
-
+    <!-- END LOAD USER GUIDE PAGE -->
 
 </head>
 <body>
@@ -149,24 +150,27 @@
              </div>
 
 <!--Content section Starts here-->
-<!-- The dynamic display zone for site content-->
+
 <div class="container-fluid content-section">
 <div id="about" class="row about">
-<div id="about12">
-</div>
-
      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-         
+
+
+     <!-- The dynamic display zone for site content-->  
+     <div class="row">
+      <div id="user-guide-display-zone" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+      </div>
+
+     </div>
+     <!-- And also The end of  the dynamic display zone for site content-->
+
+
+
      <div class="row">
       <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
        <h2 class="about-title"><i class="fas fa-info-circle"></i> About PP Builder</h2>
       </div>
-
-  <!-- <div id="ppbuilder-form" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-               
-        <button data-toggle="modal" data-target="#searchModal" class="btn-success"><i class="far fa-compass"></i> Launch PP Builder API</button>
-
-   </div>-->
 
      </div>
 
@@ -189,7 +193,7 @@ The PP Builder works as follows:</p>
 
 
 </div><!--Section for content ends here-->
-<!-- And also The end of  the dynamic display zone for site content-->
+
 
 <!-- Contact us zone starts here-->
 
@@ -401,8 +405,16 @@ You can read more about how we protect privacy of your data <a href="https://ec.
 
 <!--JQUERY (JAVASCRIPT) SCRIPTS FOR THE CONTACT FORM TO WORK-->
 
+<!--
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+    -->
+
+
+   <!-- Own written javascripts for the project 
+    <script type="text/javascript" src="assets/scripts/script.js"> </script>-->
+     <!-- Load specs (or tests to be run to test our script.js) 
+    <script type="text/javascript" src="assets/specs/scriptSpec.js"> </script>-->
     </body>
 </html>
