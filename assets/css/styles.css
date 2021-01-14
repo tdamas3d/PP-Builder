@@ -28,10 +28,9 @@ a, a:hover, a:focus, a:active {
       color: inherit;
 }
 
-
 a{
     color:greenyellow;
-    font-weight:lighter;
+    font-weight:bold;
     text-decoration: none !important;
 }
 
@@ -39,11 +38,6 @@ a:hover{
     color:#fff;
     text-decoration: none;
 }
-
-/*
-.active{
-    color:red;
-}*/
 
 /* Header styles */
 header{
@@ -55,7 +49,6 @@ header{
     background-color:#000;
     z-index:14;
    }
-
 
 /* nav styles */
 .top-navigation-zone{
@@ -83,6 +76,9 @@ header{
 position: relative;
   display:inline-block;
     color:#dddddd;
+    color:#e4d4d4;
+    color:#a3c56e;
+    color:#a2e43a;
   font-size: 1.3rem;
  font-weight: lighter;
  line-height: 1.8rem;
@@ -94,7 +90,6 @@ position: relative;
     display:none;
     font-size: 1rem;
 }
-
 
 
 nav{
@@ -114,7 +109,10 @@ nav ul li a{
    padding-left: 5px;
    padding-right: 10px;
    padding-top: 0px;
-        color:#dddddd;  
+        color:#dddddd; 
+        color:#e4d4d4; 
+        color:#a3c56e;
+        color:#a2e43a;
        font-size: 2.1rem;
     /*font-size: 1.3rem;*/
  font-weight: bold;
@@ -124,7 +122,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
- color:#e4d4d4;
+ color:#a2e43a;
+  color:#a3c56e;
  text-decoration: none;
 }
 
@@ -145,7 +144,6 @@ nav ul li a:hover{
 }
 
 /* styles for banner zone i.e. for big logo and home image */
-
 
 .banner-zone{
  position:relative;
@@ -183,11 +181,15 @@ font-weight: bold;
 line-height: 1.8rem;
 text-transform: uppercase;
     color:#dddddd;
+    color:#e4d4d4;
+    color:#a3c56e;
+    color:#a2e43a;
 text-decoration:none;
 }
 
 .big-logo h1 a:hover{
-    color:#dddddd;
+    color:#a2e43a;
+     color:#a3c56e;
 }
 
 .big-logo p{
@@ -200,6 +202,8 @@ font-weight: lighter;
 line-height: 1.8rem;
 text-transform: capitalize;
 color:#dddddd;
+color:#e4d4d4;
+color:#a3c56e;
 text-decoration:overline;
 }
 
@@ -213,6 +217,9 @@ font-weight: lighter;
 line-height: 1.8rem;
 text-transform: capitalize;
 color:#dddddd;
+color:#e4d4d4;
+color:#a3c56e;
+color:#a2e43a;
 text-decoration:overline;
 }
 
@@ -239,7 +246,6 @@ text-decoration:overline;
 }
 
 
-
 .home-image-content h2{
  padding-top: 4vh;
  font-size: 2.3rem;
@@ -248,6 +254,9 @@ text-decoration:overline;
  text-align:center;
  text-transform: capitalize;
   color:#fff;
+  color:#e4d4d4;
+  color:#a3c56e;
+  color:#a2e43a;
   /*color:#eac6b8;*/
   text-decoration:none;
 }
@@ -259,6 +268,8 @@ text-decoration:overline;
  font-weight: lighter;
  text-align:center;
  color:#fff;
+ color:#e4d4d4;
+ color:#a2e43a;
 }
 
 /* Styles for Square menu*/
@@ -274,31 +285,32 @@ text-decoration:overline;
 
 /*End Styles Square Menu*/
 
-
 /*Styles Square Menu Content or Sell*/
   .square-menu-col{
       position:relative;
-      margin-right:2px;
+      /*margin-right:2px;*/
+      margin:0;
       padding:45px 5px 45px 5px;
       font-size: 2.1rem;
-    font-weight: lighter;
+    font-weight: bold;
     line-height: 1.8rem;
     color:greenyellow;
      background-color: #3f48cc;
       text-align:center;
       height:auto;
+      border-right: 2px solid #000;
       
   }
     .square-menu-col a{
         color:greenyellow;
         text-decoration: none;
+        
     }
 
         .square-menu-col a:hover{
         color:#fff;
         text-decoration: none;
     }
-
 
 
   .square-menu-col-gradient{
@@ -332,6 +344,12 @@ button:hover{
 /*End Styles Square Menu Content or Sell*/
 
 
+.size-light{
+  font-weight: lighter;
+}
+
+
+
 #generatedHTML{
     display:none;
 }
@@ -347,9 +365,7 @@ button:hover{
 
 
 
-
 /*  Header styles ends */
-
 
 /*  Content about me -- CSS styles */
 
@@ -371,17 +387,16 @@ button:hover{
     padding-left:35px;
     padding-top:30px;
 font-size: 2.1rem;
-    font-weight: lighter;
+    font-weight: bold;
     line-height: 1.8rem;
     color:greenyellow;
- text-transform: uppercase;
+ text-transform: capitalize;
 }
 
 /*
 #contentDisplayZone{
  display:block;
 }*/
-
 
 .about-short-text{
     position:relative;
@@ -418,7 +433,6 @@ ol{
 }
 
 
-
 .profile-image0{
     position:relative;
     padding-top:40px;
@@ -445,7 +459,6 @@ ol{
     filter: alpha(opacity=80);
   
 }
-
 
 .short-summary{
  position:relative;
@@ -494,7 +507,6 @@ ol{
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
 }
-
 
 
 /* FOOTER ZONE MENUS */
@@ -561,7 +573,7 @@ color:#fff;
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: #dddddd;
+    background-color: #d29797;
 }
 
 .contactus-zone a{
@@ -599,7 +611,6 @@ text-transform: uppercase;
     z-index: 16;
 }
 
-
 .user-agreement p{
     padding-bottom: 2px;
     margin: 0 auto;
@@ -627,9 +638,7 @@ text-transform: uppercase;
           top: 15px;
    }
    
-   
    /* CSS rules for forms */
-
    .form-control{
     display: block;
     width: 100%;
@@ -671,7 +680,6 @@ label {
    .text-muted {
     color: #a7e26e!important;
 }
-
 .close {
     float: right;
     font-size: 1.5rem;
@@ -681,6 +689,4 @@ label {
     text-shadow: 0 1px 0 #a89dc3;
     opacity: .5;
 }
-
-
 /* end of CSS style */
