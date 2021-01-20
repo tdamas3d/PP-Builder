@@ -63,11 +63,24 @@ xhr.send();
     var url2=$("#productName").val(); /* keywords, name or type of products */
     url=url1+url2; /* combined or the url of the search */
     $("#productsSearchForm").attr('action',url);
-
+    //alert(url);
+     
   });
+
+
+
+   $("#testbtn").click(function(){
+
+     /*$.get("faqs.txt", function(data, status){
+       $("#testo").html(data);
+       alert(status);})*/
+     
+
+       alert($("#testo").html());
+         alert("OKAY");
+      //});
+    });
    
-
-
 
 
 }); /*end of jquery scripts*/

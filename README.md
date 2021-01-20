@@ -39,8 +39,3 @@ The PP Builder works as follows:</p>
 
 ## ! important:
 <p> The product is Under development</p>
-
-
-
-
-
